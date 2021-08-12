@@ -7,6 +7,3 @@ def home(request):
     context = {'posts': posts}
     # now the context is accessible within the template home.html
     return render(request, 'Dance_Up_Music/home.html', context)
-
-def about(request):
-    return render(request, 'Dance_Up_Music/about.html', {'title' : 'About'})
